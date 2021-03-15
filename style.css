@@ -1,0 +1,270 @@
+@font-face {
+  font-family: "Kiona-Regular";
+  src: url(polices/Kiona-Regular.ttf) format("truetype");
+}
+body {
+  height: 500%;
+  width: 100%;
+  font-family: "Kiona-Regular";
+  color: #3C3C3C;
+  margin: 0;
+}
+
+header {
+  display: inline-flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
+header .logo img {
+  position: relative;
+  height: 100px;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+header nav ul li {
+  font-size: 1.5em;
+  list-style-type: none;
+}
+header nav li a {
+  color: #3C3C3C;
+  text-decoration: none;
+}
+header nav li a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #79B02C;
+}
+
+.triche {
+  height: 100px;
+}
+
+.image1 {
+  background-image: url("images/12.jpg");
+  border-top: 6px solid #79B02C;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.text1 {
+  font-size: 1.5em;
+  color: #3C3C3C;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #eaeaee;
+  height: 600px;
+}
+.presentation .texte_presentation {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 520px;
+  height: 400px;
+  line-height: 17px;
+}
+.presentation h1 {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #79B02C;
+}
+.presentation .image_presentation img {
+  height: 400px;
+}
+
+.situation {
+  background-color: #eaeaee;
+  font-size: 1.5em;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.image2 {
+  background-image: url("images/17.jpg");
+  border-top: 6px solid #79B02C;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.bouton_projet {
+  font-size: 2em;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bouton_projet a {
+  background-color: #79B02C;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.images_projet {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 150px 50px 150px;
+}
+.images_projet img {
+  height: 100px;
+}
+
+.devis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 6px solid #79B02C;
+}
+.devis h1 {
+  font-size: 2.5em;
+  color: #3C3C3C;
+}
+
+.container {
+  border: #79B02C 2px solid;
+  margin-left: 25%;
+  width: 50%;
+  height: 50%;
+  margin-bottom: 50px;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.container form input[type=text], .container form textarea {
+  font-family: "Kiona-Regular";
+  font-size: 1.5em;
+  color: #3C3C3C;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom-color: #79B02C;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 10px 0 10px 10px;
+}
+.container form input[type=submit] {
+  font-family: "Kiona-Regular";
+  font-size: 1.5em;
+  color: #3C3C3C;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 10px 0 10px 0;
+  cursor: pointer;
+}
+.container form input[type=submit]:hover {
+  background-color: #79B02C;
+}
+
+.imgfooter {
+  background-image: url("images/15.jpg");
+  border-top: 6px solid #79B02C;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.footer {
+  background-color: #504e50;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer img {
+  height: 200px;
+  margin-top: 40px;
+}
+.footer .pieddepage {
+  width: 800px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #79B02C;
+}
+.footer .pieddepage .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+  margin-left: 0;
+}
+.footer .pieddepage .contact p {
+  font-size: 2em;
+  margin: 0;
+  text-decoration: underline;
+  text-decoration-color: #504e50;
+}
+.footer .pieddepage .contact li {
+  font-family: "Kiona-Regular";
+  font-size: 1em;
+  color: white;
+  list-style-type: none;
+  line-height: 30px;
+}
+.footer .pieddepage .contact li img {
+  height: 30px;
+  margin: 0;
+}
+.footer .pieddepage .plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+  margin-left: 0;
+}
+.footer .pieddepage .plan p {
+  font-size: 2em;
+  margin: 0;
+  text-decoration: underline;
+  text-decoration-color: #504e50;
+}
+.footer .pieddepage .plan li {
+  font-family: "Kiona-Regular";
+  font-size: 1em;
+  color: white;
+  list-style-type: none;
+  line-height: 30px;
+}
+
+.copyright {
+  background-color: #504e50;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1em;
+}
+
+/*# sourceMappingURL=style.css.map */

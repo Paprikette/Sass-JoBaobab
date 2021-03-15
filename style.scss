@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "Kiona-Regular";
+    src: url(polices/Kiona-Regular.ttf) format('truetype');
+}
+
+@import "./mixins.scss";
+@import "./variables.scss";
+
+body{
+  @include body;
+  margin: 0;
+}
+
+//ZONE1//
+header{
+  @include header;
+  .logo img{
+    position: relative;
+    height: 100px;
+  }
+
+  nav{
+    @include nav;
+    ul{
+      @include ul;
+      li{
+        font-size: 1.5em;
+        list-style-type: none;
+      }
+    }
+    li a{
+      color: $secondcolor;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-decoration-color: $firstcolor;
+      }
+    }
+  }
+}
+
+.triche{
+  height: 100px;
+}
+
+.image1{
+  background-image: url("images/12.jpg");
+  border-top: 6px solid $firstcolor;
+  @include backgroundimg;
+
+}
+.text1{
+  font-size: 1.5em;
+  color: $secondcolor;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+//ZONE2//
+.presentation{
+  @include presentation;
+  background-color: rgb(234, 234, 238);
+  height: 600px;
+
+  .texte_presentation {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 520px;
+    height: 400px;
+    line-height: 17px;
+  }
+  h1{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: $firstcolor;
+  }
+  .image_presentation img{
+    height: 400px;
+  }
+}
+
+.situation{
+  background-color: rgb(234, 234, 238);
+  font-size: 1.5em;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+//ZONE3//
+.image2{
+  background-image: url("images/17.jpg");
+  border-top: 6px solid $firstcolor;
+  @include backgroundimg;
+}
+.bouton_projet{
+  font-size: 2em;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a{
+    background-color: $firstcolor;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+
+  }
+}
+.images_projet{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 150px 50px 150px;
+
+
+
+  img{
+    height: 100px;
+  }
+}
+
+//ZONE4//
+.devis{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 6px solid $firstcolor;
+
+  h1{
+    font-size: 2.5em;
+    color: $secondcolor;
+  }
+}
+.container{
+  border: $firstcolor 2px solid;
+  margin-left: 25%;
+  width: 50%;
+  height: 50%;
+  margin-bottom: 50px;
+
+  form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    input[type=text], textarea{
+      @include input;
+      box-sizing: border-box;
+      border-bottom-color: $firstcolor;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      padding: 10px 0 10px 10px;
+    }
+
+    input[type=submit]{
+      @include input;
+      border: none;
+      background-color: transparent;
+      padding: 10px 0 10px 0;
+      cursor: pointer;
+
+      &:hover{
+        background-color: $firstcolor;
+      }
+    }
+  }
+}
+//ZONE5//
+.imgfooter{
+  background-image: url("images/15.jpg");
+  border-top: 6px solid $firstcolor;
+  @include backgroundimg;
+}
+.footer{
+  background-color: $thirdcolor;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+
+  img{
+    height: 200px;
+    margin-top: 40px;
+  }
+
+
+  .pieddepage{
+    width: 800px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    background-color: $firstcolor;
+
+    .contact{
+      @include pieddepage;
+
+      p{
+        @include p;
+      }
+      li{
+        @include li;
+      }
+      li img{
+        height: 30px;
+        margin: 0;
+      }
+    }//contact
+    .plan {
+      @include pieddepage;
+
+      p{
+        @include p;
+      }
+      li{
+        @include li;
+      }
+    }//plan
+  }//pieddepage
+}//footer
+
+.copyright{
+  background-color: $thirdcolor;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1em;
+}
